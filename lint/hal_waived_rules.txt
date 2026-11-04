@@ -1,0 +1,63 @@
+# HAL rule IDs waived after review (one per line, # comments allowed).
+# Reasons are in lint/WAIVERS.md. Anything NOT listed here is reported.
+# Intentional same-cycle grant path (check arready->pop timing in Tempus)
+CBPAHI
+TPOUNR
+IOCOMB
+FDTHRU
+# Reset style: synchronous reset by design; FIFO/tracker memories need no reset
+FFWASR
+FFWNSR
+# Coding-style rules (naming, layout, block naming, SV keyword style)
+MAXLEN
+SEPLIN
+DECLIN
+NUMSUF
+IDLENG
+NOBLKN
+NBGEND
+OLDALW
+STYVAL
+EXPIPC
+PRMBSE
+PADMSB
+# Documented unconnected outputs/ports
+UNCONO
+UNCONN
+# Reviewed: index arithmetic (mux), score multipliers, comb regs read elsewhere,
+# shared AR/AW drivers, parameter-constant conditions, guarded/wrapping counters
+INDXOP
+LRGOPR
+REVROP
+SYNASN
+DALIAS
+CONSTC
+CNSTCN
+CONSBS
+POIASG
+# Informational notes
+CDNOTE
+INFNOT
+PRTCNT
+# --- third pass (reviewed 3 Nov) ---
+# Combinational output ports (same deliberate same-cycle path as CBPAHI)
+SYNPRT
+# Constant outputs: AXI size/burst/strobe, always-ready R/B, zero scores in baselines
+TIELOG
+# Baselines share the adaptive port/parameter list and ignore traffic metrics
+USEPRT
+USEPAR
+# Elaboration-time $warning/$error checks inside synthesis translate_off
+BADSYS
+INIUSP
+# Informational: arrays present (FIFO and tracker storage)
+VLGMEM
+# Two-line accept/pause glue in the top level
+ATLGLC
+# Arbiter select block uses a loop with several ifs (one combinational decision)
+MICAWS
+# DMA FSM: state register shares an always block with the burst-buffer datapath;
+# binary state encoding (Gray-style single-bit transitions not required)
+BADFSM
+EXTFSM
+TRNMBT
