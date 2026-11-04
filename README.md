@@ -204,7 +204,6 @@ chmod +x run.sh run3.sh explore.sh lint/run_lint.sh syn/*.sh pnr/*.sh
 | Name | Role |
 |---|---|
 | **Nikshitha N Shetty** ([@nikshithashetty-lgtm](https://github.com/nikshithashetty-lgtm)) | Architecture, RTL, verification, synthesis, physical design and sign-off |
-| **FRIEND_NAME** ([@FRIEND_GITHUB](https://github.com/FRIEND_GITHUB)) | FRIEND_ROLE (e.g. FPGA implementation on Zynq-7020, Vivado block design, Vitis software) |
 
 M.E. VLSI, Manipal School of Information Sciences (MSIS), Manipal.
 
