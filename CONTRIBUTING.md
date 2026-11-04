@@ -12,6 +12,3 @@
 
 ## Commit messages
 Short imperative summary, e.g. `fpga: add AXI-Lite mode register`.
-For work done together, add a trailer so both names show on GitHub:
-
-    Co-authored-by: Name <email-linked-to-their-github>
